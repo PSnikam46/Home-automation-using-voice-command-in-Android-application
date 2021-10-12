@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.df4u.piot.MainActivity"
+    android:background="@drawable/bg">
+
+    <EditText
+        android:id="@+id/command"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textColorHighlight="#fff"
+        android:textColorLink="#fff"
+        android:hint="Command"/>
+
+    <Button
+        android:id="@+id/execbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Execute"
+        android:background="#FE3231"
+        android:textColor="#fff"
+        android:layout_below="@+id/command"/>
+
+    <ImageButton
+        android:id="@+id/voicebtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mic"
+        android:text="Voice Command" />
+
+    <EditText
+        android:id="@+id/iptxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ipbtn"
+        android:inputType="text"
+        android:hint="Enter Pi's IP"
+        android:textColor="#fff"
+        android:textColorHint="#fff"/>
+
+    <Button
+        android:id="@+id/ipbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save IP"
+        android:background="#FE3231"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff" />
+
+
+
+    <WebView
+        android:id="@+id/webvu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"></WebView>
+
+
+</RelativeLayout>
